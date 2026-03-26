@@ -1,0 +1,11 @@
+10
+12 STANDARD apple banana orange
+321 EXPRESS ps5 hateful_eight
+14 PRIORITY triple_bypass nuke junk
+42 EXPRESS something important I guess
+64 EXPRESS don't know
+867 STANDARD uga
+34 EXPRESS article
+4876 STANDARD something I would like to have
+25462 PRIORITY not even tring anymore
+16 EXPRESS please stop please!
