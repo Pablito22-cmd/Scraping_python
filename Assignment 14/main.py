@@ -30,14 +30,16 @@ for table in epTables:
             "Stagione": season,
             "NumEpisodio": info[0].contents[0],
             "Titolo": info[1].find("a").get("title"),
-            #"Visualizzazioni": episode.find()
         }
         
         director = info[2].find("a")
         if director:
             data["Regista"] = director.get("title")
         else:
-            data["Regista"] = info[2].contents[0]
+            if info[2].find(class_="nowrap"):
+                data["Regista"] = info[2].find(class_="nowrap").contents[0]
+            else:
+                data["Regista"] = info[2].contents[0]
 
         writer = info[3].find("a")
         if writer:
